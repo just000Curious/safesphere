@@ -1,0 +1,143 @@
+﻿alembic : INFO  [alembic.r
+untime.migration] Context 
+impl PostgresqlImpl.
+At line:1 char:1
++ alembic revision 
+--autogenerate -m 
+"Initial Schema" > 
+error3.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (I  
+  NFO  [alembic....Post   
+ gresqlImpl.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+INFO  [alembic.runtime.mig
+ration] Will assume 
+transactional DDL.
+INFO  
+[alembic.runtime.plugins] 
+setting up autogenerate 
+plugin alembic.autogenerat
+e.schemas
+INFO  
+[alembic.runtime.plugins] 
+setting up autogenerate 
+plugin alembic.autogenerat
+e.tables
+INFO  
+[alembic.runtime.plugins] 
+setting up autogenerate 
+plugin 
+alembic.autogenerate.types
+INFO  
+[alembic.runtime.plugins] 
+setting up autogenerate 
+plugin alembic.autogenerat
+e.constraints
+INFO  
+[alembic.runtime.plugins] 
+setting up autogenerate 
+plugin alembic.autogenerat
+e.defaults
+INFO  
+[alembic.runtime.plugins] 
+setting up autogenerate 
+plugin alembic.autogenerat
+e.comments
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'users'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 
+'ix_users_email' on 
+'('email',)'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 
+'ix_users_phone' on 
+'('phone',)'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'alerts'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 
+'ix_alerts_triggered_at' 
+on '('triggered_at',)'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 
+'ix_alerts_user_id' on 
+'('user_id',)'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'audit_logs'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 'ix_a
+udit_logs_created_at' on 
+'('created_at',)'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'trusted_contacts'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'user_contacts'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'incidents'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'locations'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 
+'ix_locations_timestamp' 
+on '('timestamp',)'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 
+'ix_locations_user_id' on 
+'('user_id',)'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'notifications'
+INFO  [alembic.autogenerat
+e.compare.constraints] 
+Detected added index 'ix_n
+otifications_user_id' on 
+'('user_id',)'
+INFO  [alembic.autogenerat
+e.compare.tables] 
+Detected added table 
+'evidence'
+ERROR 
+[alembic.util.messaging] 
+Could not determine 
+revision id from filename 
+246212924599_initial_schem
+a.py. Be sure the 
+'revision' variable is 
+declared inside the 
+script (please see 
+'Upgrading from Alembic 
+0.1 to 0.2' in the 
+documentation).
+Generating G:\safesphere\backend\alembic\versions\246212924599_initial_schema.py ...  done
+FAILED: Could not determine revision id from filename 246212924599_initial_schema.py. Be sure the 'revision' variable is declared inside the script (please see 'Upgrading from Alembic 0.1 to 0.2' in the documentation).

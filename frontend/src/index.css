@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7C3AED;
+  --color-danger: #E11D48;
+  --color-success: #10B981;
+  --color-textMuted: #94A3B8;
+  --animate-pulse-fast: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  :root {
+    --bg-main: #0B0F19; /* dark mode background */
+    --bg-panel: rgba(15, 23, 42, 0.8);
+    --text-main: #F8FAFC;
+    --text-emphasis: #FFFFFF;
+    --border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  :root.light {
+    --bg-main: #F8FAFC; /* light mode background */
+    --bg-panel: rgba(255, 255, 255, 0.9);
+    --text-main: #334155;
+    --text-emphasis: #0F172A;
+    --border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  html, body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background-color: var(--bg-panel);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-sos {
+    background-color: var(--color-danger);
+    color: white;
+    border-radius: 9999px;
+    font-weight: 700;
+  }
+  
+  /* Override explicitly styled white headers where needed */
+  h1, h2, h3, h4, .text-white {
+    color: var(--text-emphasis) !important;
+  }
+  .border-white\/5, .border-white\/10 {
+    border-color: var(--border-color) !important;
+  }
+  .bg-darker\/50 {
+    background-color: var(--bg-panel) !important;
+  }
+}

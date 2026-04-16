@@ -1,0 +1,36 @@
+﻿alembic : INFO  [alembic.r
+untime.migration] Context 
+impl PostgresqlImpl.
+At line:1 char:1
++ alembic revision 
+--autogenerate -m 
+"Initial Schema" > 
+error.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (I  
+  NFO  [alembic....Post   
+ gresqlImpl.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+INFO  [alembic.runtime.mig
+ration] Will assume 
+transactional DDL.
+ERROR 
+[alembic.util.messaging] 
+Could not determine 
+revision id from filename 
+7c7269c8d914_initial_schem
+a.py. Be sure the 
+'revision' variable is 
+declared inside the 
+script (please see 
+'Upgrading from Alembic 
+0.1 to 0.2' in the 
+documentation).
+FAILED: Could not determine revision id from filename 7c7269c8d914_initial_schema.py. Be sure the 'revision' variable is declared inside the script (please see 'Upgrading from Alembic 0.1 to 0.2' in the documentation).
