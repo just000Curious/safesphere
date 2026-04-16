@@ -295,18 +295,5 @@ For issues or questions:
 2. Review API documentation at `/docs`
 3. Check application logs in backend
 
----
-
-## 📄 License
-
-[Add your license here]
-
----
-
-## 👥 Contributors
-
-[Add contributors here]
-
----
 
 **Happy coding! 🎉**
