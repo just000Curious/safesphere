@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     twilio_account_sid: Optional[str] = None
     twilio_auth_token: Optional[str] = None
     twilio_phone_number: Optional[str] = None
+    fast2sms_api_key: Optional[str] = None
     
     # Email
     smtp_host: str = "smtp.gmail.com"
